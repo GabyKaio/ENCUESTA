@@ -1,5 +1,25 @@
-{
-  "name": "John Deere Experience Survey",
-  "description": "A high-security, mobile-optimized survey application for John Deere stand visitors, featuring real-time analytics and configurable product interests.",
-  "requestFramePermissions": []
+
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+// Registrar el Service Worker para permitir la instalación como App
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(reg => console.log('SW registrado', reg))
+      .catch(err => console.log('SW error', err));
+  });
 }
+
+const rootElement = document.getElementById('root');
+if (!rootElement) {
+  throw new Error("Could not find root element to mount to");
+}
+
+const root = ReactDOM.createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
