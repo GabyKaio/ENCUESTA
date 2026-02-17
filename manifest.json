@@ -2,17 +2,27 @@
 {
   "short_name": "JD Survey",
   "name": "John Deere Experience Survey",
+  "description": "App de encuestas para stands de John Deere",
+  "id": "/?source=pwa",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#367C2B",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "categories": ["business", "productivity"],
   "icons": [
     {
       "src": "https://cdn-icons-png.flaticon.com/512/2972/2972215.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/2972/2972215.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#367C2B",
-  "background_color": "#f8fafc",
-  "orientation": "portrait"
+  ]
 }
