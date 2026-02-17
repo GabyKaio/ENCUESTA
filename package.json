@@ -1,28 +1,23 @@
-
 {
-  "short_name": "JD Survey",
-  "name": "John Deere Experience Survey",
-  "description": "App de encuestas para stands de John Deere",
-  "id": "/?source=pwa",
-  "start_url": "/?source=pwa",
-  "scope": "/",
-  "display": "standalone",
-  "theme_color": "#367C2B",
-  "background_color": "#ffffff",
-  "orientation": "portrait",
-  "categories": ["business", "productivity"],
-  "icons": [
-    {
-      "src": "https://cdn-icons-png.flaticon.com/512/2972/2972215.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any"
-    },
-    {
-      "src": "https://cdn-icons-png.flaticon.com/512/2972/2972215.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable"
-    }
-  ]
+  "name": "john-deere-experience-survey",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "recharts": "^3.7.0",
+    "react-dom": "^19.2.4",
+    "@google/genai": "^1.41.0",
+    "react": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  }
 }
